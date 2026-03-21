@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import './Home.css';
 
 const Home: React.FC = () => {
@@ -110,9 +111,9 @@ const Home: React.FC = () => {
           <p className="section-description">
             If you are launching a new product or refining an existing one, I can help you ship a faster, cleaner experience.
           </p>
-          <a href="/contact" className="cta-button cta-large">
+          <Link to="/contact" className="cta-button cta-large">
             Start A Conversation
-          </a>
+          </Link>
         </div>
       </section>
     </div>
