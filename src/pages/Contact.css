@@ -1,0 +1,267 @@
+.contact {
+  min-height: 100vh;
+  background: #ffffff;
+}
+
+.contact-hero {
+  background: #fbfbfd;
+  color: #1d1d1f;
+  padding: 7rem 2rem 5rem;
+  text-align: center;
+}
+
+.contact-hero h1 {
+  font-size: clamp(2.2rem, 4vw, 3.8rem);
+  margin-bottom: 0.7rem;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+}
+
+.contact-hero .subtitle {
+  font-size: 1.1rem;
+  color: #6e6e73;
+  font-weight: 400;
+}
+
+.contact-content {
+  padding: 2rem 2rem 5rem;
+  background: #ffffff;
+}
+
+.contact-wrapper {
+  max-width: 1080px;
+  margin: 0 auto;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 0.95fr 1.05fr;
+  gap: 1rem;
+  align-items: start;
+}
+
+.contact-info {
+  background: #f5f5f7;
+  padding: 2rem;
+  border-radius: 20px;
+  height: fit-content;
+  border: 1px solid #ececef;
+}
+
+.info-item {
+  margin-bottom: 1.6rem;
+  padding-bottom: 1.6rem;
+  border-bottom: 1px solid #e6e6eb;
+}
+
+.info-item:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.info-item h3 {
+  font-size: 0.95rem;
+  color: #1d1d1f;
+  margin-bottom: 0.35rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+}
+
+.info-item p {
+  color: #6e6e73;
+  font-size: 1rem;
+}
+
+.info-item a {
+  color: #1d1d1f;
+  text-decoration: none;
+  transition: color 0.2s ease;
+  font-weight: 500;
+}
+
+.info-item a:hover {
+  color: #0071e3;
+}
+
+.social-links {
+  display: flex;
+  gap: 0.55rem;
+  margin-top: 0.35rem;
+}
+
+.social-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: #ffffff;
+  border: 1px solid #d9d9df;
+  border-radius: 50%;
+  color: #1d1d1f;
+  text-decoration: none;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.social-icon svg {
+  width: 18px;
+  height: 18px;
+  fill: currentColor;
+}
+
+.social-icon:hover {
+  background: #f0f0f2;
+  border-color: #c8c8cf;
+}
+
+.contact-form-wrapper {
+  background: #f5f5f7;
+  padding: 2rem;
+  border-radius: 20px;
+  border: 1px solid #ececef;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-size: 0.9rem;
+  color: #6e6e73;
+  margin-bottom: 0.45rem;
+  font-weight: 600;
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 0.78rem 0.95rem;
+  border: 1px solid #d2d2d7;
+  border-radius: 12px;
+  font-size: 0.98rem;
+  font-family: inherit;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  background: #ffffff;
+  color: #1d1d1f;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: #8e8e93;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #0071e3;
+  box-shadow: 0 0 0 3px rgba(0, 113, 227, 0.14);
+}
+
+.form-group textarea {
+  resize: vertical;
+}
+
+.submit-button {
+  padding: 0.85rem 1.3rem;
+  background: #0071e3;
+  color: #ffffff;
+  border: none;
+  border-radius: 999px;
+  font-size: 0.97rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  margin-top: 0.6rem;
+}
+
+.submit-button:hover {
+  background: #0077ed;
+}
+
+.form-error {
+  margin-top: 0.45rem;
+  color: #b42318;
+  font-size: 0.92rem;
+}
+
+.success-message {
+  text-align: center;
+  padding: 1.6rem;
+  background: #ffffff;
+  border: 1px solid #d1e8d3;
+  border-radius: 14px;
+}
+
+.success-message h3 {
+  color: #1d1d1f;
+  font-size: 1.2rem;
+  margin-bottom: 0.35rem;
+}
+
+.success-message p {
+  color: #6e6e73;
+  font-size: 0.98rem;
+}
+
+.faq-section {
+  background: #fbfbfd;
+  padding: 5rem 2rem;
+  text-align: center;
+}
+
+.faq-section h2 {
+  font-size: clamp(2rem, 3.5vw, 2.8rem);
+  color: #1d1d1f;
+  margin-bottom: 1.4rem;
+  letter-spacing: -0.02em;
+}
+
+.faq-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.9rem;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+.faq-item {
+  background: #ffffff;
+  padding: 1.6rem;
+  border-radius: 16px;
+  border: 1px solid #ececef;
+  text-align: left;
+}
+
+.faq-item h3 {
+  font-size: 1.02rem;
+  color: #1d1d1f;
+  margin-bottom: 0.55rem;
+}
+
+.faq-item p {
+  color: #6e6e73;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+@media (max-width: 768px) {
+  .contact-wrapper {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .contact-info,
+  .contact-form-wrapper {
+    padding: 1.4rem;
+  }
+
+  .faq-grid {
+    grid-template-columns: 1fr;
+  }
+}
