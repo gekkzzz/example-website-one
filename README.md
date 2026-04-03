@@ -1,73 +1,52 @@
-# React + TypeScript + Vite
+# Example Website One 🌐
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a fully responsive, optimized web application built to demonstrate modern frontend architecture, clean code practices, and seamless deployment workflows. This project was inspired by Apple design with it's sleek and simple design that is both recognisable and conveys the brand well.
 
-Currently, two official plugins are available:
+**🔗 [View Live Site](https://example-website-one-coral.vercel.app/)**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## 🚀 Key Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Responsive UI/UX:** A mobile-first approach ensuring the site looks great on everything from smartphones to 4K monitors.
+- **Optimized Performance:** Achieving high Core Web Vitals scores through efficient asset loading and clean code.
+- **Interactive Elements:** [Mention a specific feature, e.g., Dynamic navigation, smooth scroll animations, or form validation.]
+- **Modern Deployment:** Automated CI/CD pipeline via Vercel for instant updates.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🧠 What I Learned
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+Building this project allowed me to dive deeper into:
+1. **Semantic HTML:** Improving accessibility (A11y) and SEO.
+2. **CSS Architecture:** Organizing styles using [e.g., BEM methodology or Utility-first] to ensure maintainability.
+3. **Responsive Patterns:** Implementing complex layouts that adapt without breaking.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## 📂 Project Structure
+
+```text
+├── assets/          # Images, fonts, and icons
+├── css/             # Stylesheets (organized by component)
+├── js/              # Functional logic
+├── index.html       # Main entry point
+└── README.md        # Documentation
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## ⚙️ Local Development
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+To run this project locally:
+
+1. Clone the repo:
+   ```bash
+   git clone https://github.com/gekkzzz/example-website-one.git
+   ```
+2. Navigate to the folder:
+   ```bash
+   cd example-website-one
+   ```
+3. Launch with a local server:
+   *(If using VS Code, I recommend the **Live Server** extension.)*
