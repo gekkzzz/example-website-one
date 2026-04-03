@@ -77,4 +77,3 @@ To run this project locally, make sure you have [Node.js](https://nodejs.org/) i
    ```
 
 5. Open your browser and navigate to the `localhost` URL provided in your terminal.
-```
